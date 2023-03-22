@@ -1,0 +1,104 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>client login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Steppy Account Create Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css1/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<!-- //web font --> 
+</head>
+<body>
+	<!-- main -->
+	<div class="main-agileits">
+		<!-- <h1>Steppy Account Create Form</h1> -->
+		<div class="main-row">
+			<ul class="steps">
+				<h1 style='font-family:normal'>CLIENT LOGIN</h1>
+				<!-- <li>Register</li> -->
+				<!-- <li>Step 3</li> -->
+			</ul>
+			<form class="form-wrapper" action="CL_login" method="post">
+				<fieldset class="section is-active"> 
+					<!-- <h3>Your Details</h3> -->
+					<input type="email" name="email" id="email" placeholder="Email" required="" autocomplete="off">
+					<input type="password" name="pass" id="pass" placeholder="Password" autocomplete="off" required=""><br>
+					
+					<input type="submit" value="LOGIN" style='background-color:lightskyblue;font-size:20px;font-family:normal;padding: 7px 12px;border:none' /><br>
+		 			
+		 			 <br><a href="CL_register.html"  style='background-color:yellow;font-size:20px;font-family:normal;border:none;color:black;padding: 7px 12px;'> REGISTER </a><br>
+					<br><a href="index.html" class="button" style='background-color:blue;font-size:25px;font-family:normal;border:none; padding: 10px 20px;'> HOME </a>
+				</fieldset>
+				
+			</form>
+		</div>	
+	</div>	
+	<!-- //main -->
+	<!-- copyright -->
+	<div class="w3copyright-agile">
+		
+	</div>
+	<!-- //copyright --> 
+	<!-- js -->
+	<script src="js1/jquery-2.2.3.min.js"></script> 
+	<script>
+		$(document).ready(function(){
+		  $(".form-wrapper .button").click(function(){
+			var button = $(this);
+			var currentSection = button.parents(".section");
+			var currentSectionIndex = currentSection.index();
+			var headerSection = $('.steps li').eq(currentSectionIndex);
+			currentSection.removeClass("is-active").next().addClass("is-active");
+			headerSection.removeClass("is-active").next().addClass("is-active");
+
+			$(".form-wrapper").submit(function(e) {
+			  e.preventDefault();
+			});
+
+			if(currentSectionIndex === 3){
+			  $(document).find(".form-wrapper .section").first().addClass("is-active");
+			  $(document).find(".steps li").first().addClass("is-active");
+			}
+		  });
+		});
+	</script> 	
+	<!-- //js --> 
+</body>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
